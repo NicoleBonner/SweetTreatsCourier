@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65879b92-87e5-4c9d-b380-3ada94c73ae3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SweetTreats/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SweetTreats/ListOfCouriers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SweetTreats/Refrigeration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CourierFinderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/courierTest.java" afterDir="false" />
+    <list default="true" id="65879b92-87e5-4c9d-b380-3ada94c73ae3" name="Changes" comment="First commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SweetTreats/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SweetTreats/Courier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SweetTreats/ListOfCouriers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SweetTreats/ListOfCouriers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CourierFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CourierFinderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +45,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.CourierFinderTest.When_Order_Is_Ready_For_Delivery_At_11_45">
-    <configuration name="CourierFinderTest.RefrigerationRequired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CourierFinderTest.When_Order_Has_Delivery_Distance_Of_6_Miles_Then_Return_No_Couriers">
+    <configuration name="CourierFinderTest.When_Order_Had_Delivery_Distance_Of_2_5Miles_Then_Return_All_Couriers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SweetTreatsCourier" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +56,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CourierFinderTest" />
-      <option name="METHOD_NAME" value="RefrigerationRequired" />
+      <option name="METHOD_NAME" value="When_Order_Had_Delivery_Distance_Of_2_5Miles_Then_Return_All_Couriers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourierFinderTest.When_Order_Is_Ready_For_Delivery_At_11_45" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourierFinderTest.When_Order_Had_Delivery_Distance_Of_4Miles_Then_Return_Bobby_And_Geoff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SweetTreatsCourier" />
       <extension name="coverage">
         <pattern>
@@ -81,13 +72,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CourierFinderTest" />
-      <option name="METHOD_NAME" value="When_Order_Is_Ready_For_Delivery_At_11_45" />
+      <option name="METHOD_NAME" value="When_Order_Had_Delivery_Distance_Of_4Miles_Then_Return_Bobby_And_Geoff" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourierFinderTest.When_Refrigeration_Is_NOT_Required_Return_Martin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourierFinderTest.When_Order_Has_Delivery_Distance_Of_45Miles_Then_Return_Bobby" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SweetTreatsCourier" />
       <extension name="coverage">
         <pattern>
@@ -97,13 +88,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CourierFinderTest" />
-      <option name="METHOD_NAME" value="When_Refrigeration_Is_NOT_Required_Return_Martin" />
+      <option name="METHOD_NAME" value="When_Order_Has_Delivery_Distance_Of_45Miles_Then_Return_Bobby" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourierFinderTest.When_Refrigeration_Is_Not_Required_Return_Martin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourierFinderTest.When_Order_Has_Delivery_Distance_Of_6_Miles_Then_Return_No_Couriers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SweetTreatsCourier" />
       <extension name="coverage">
         <pattern>
@@ -113,13 +104,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CourierFinderTest" />
-      <option name="METHOD_NAME" value="When_Refrigeration_Is_Not_Required_Return_Martin" />
+      <option name="METHOD_NAME" value="When_Order_Has_Delivery_Distance_Of_6_Miles_Then_Return_No_Couriers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourierFinderTest.When_Refrigeration_Is_Required_Return_Bobby_And_Geoff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourierFinderTest.When_Order_Has_No_Refridgeration_Preferance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SweetTreatsCourier" />
       <extension name="coverage">
         <pattern>
@@ -129,7 +120,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.CourierFinderTest" />
-      <option name="METHOD_NAME" value="When_Refrigeration_Is_Required_Return_Bobby_And_Geoff" />
+      <option name="METHOD_NAME" value="When_Order_Has_No_Refridgeration_Preferance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CourierFinderTest.When_Order_Is_Ready_For_Delivery_At_11_45" />
-        <item itemvalue="JUnit.CourierFinderTest.When_Refrigeration_Is_NOT_Required_Return_Martin" />
-        <item itemvalue="JUnit.CourierFinderTest.When_Refrigeration_Is_Required_Return_Bobby_And_Geoff" />
-        <item itemvalue="JUnit.CourierFinderTest.When_Refrigeration_Is_Not_Required_Return_Martin" />
-        <item itemvalue="JUnit.CourierFinderTest.RefrigerationRequired" />
+        <item itemvalue="JUnit.CourierFinderTest.When_Order_Has_Delivery_Distance_Of_6_Miles_Then_Return_No_Couriers" />
+        <item itemvalue="JUnit.CourierFinderTest.When_Order_Has_No_Refridgeration_Preferance" />
+        <item itemvalue="JUnit.CourierFinderTest.When_Order_Has_Delivery_Distance_Of_45Miles_Then_Return_Bobby" />
+        <item itemvalue="JUnit.CourierFinderTest.When_Order_Had_Delivery_Distance_Of_4Miles_Then_Return_Bobby_And_Geoff" />
+        <item itemvalue="JUnit.CourierFinderTest.When_Order_Had_Delivery_Distance_Of_2_5Miles_Then_Return_All_Couriers" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +145,14 @@
       <option name="presentableId" value="Default" />
       <updated>1676909789440</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1677079051675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677079051675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,5 +165,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>

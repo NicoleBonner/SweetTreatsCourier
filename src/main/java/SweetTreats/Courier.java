@@ -1,17 +1,18 @@
 package SweetTreats;
 
+import java.time.LocalTime;
 import java.util.Objects;
 
 public class Courier {
     private String courierName;
-    private String startTime;
-    private String endTime;
+    private LocalTime startTime;
+    private LocalTime endTime;
     private double maxDistance;
     private boolean refrigeration;
     private double pricePerMile;
 
     //constructor to create objects
-    public Courier(String courierName, String startTime, String endTime, double maxDistance, boolean refrigeration, double pricePerMile) {
+    public Courier(String courierName, LocalTime startTime, LocalTime endTime, double maxDistance, boolean refrigeration, double pricePerMile) {
         this.courierName = courierName;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -30,19 +31,19 @@ public class Courier {
         this.courierName = courierName;
     }
 
-    public String getStartTime() {
+    public LocalTime getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(String startTime) {
+    public void setStartTime(LocalTime startTime) {
         this.startTime = startTime;
     }
 
-    public String getEndTime() {
+    public LocalTime getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(String endTime) {
+    public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
 
