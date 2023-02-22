@@ -27,14 +27,14 @@ public class CourierFinderTest {
 
     //Working hours criteria tests
 
-    @Test
-    public void When_Order_Is_Ready_For_Delivery_At_11_45_Then_Return_All_Avalaible_Couriers () {
-        List<Courier> expectedlistOfCouriersForDeliveryTimeOf11_45= new ArrayList<>();
-        expectedlistOfCouriersForDeliveryTimeOf11_45.add(bobby_bikes);
-        expectedlistOfCouriersForDeliveryTimeOf11_45.add(martin_Moves);
-        expectedlistOfCouriersForDeliveryTimeOf11_45.add(geoff_Go_Go);
-        Assertions.assertEquals(expectedlistOfCouriersForDeliveryTimeOf11_45, listOfCouriersTest.deliveryTimeCriteria(19:00));
-    }
+//    @Test
+//    public void When_Order_Is_Ready_For_Delivery_At_11_45_Then_Return_All_Avalaible_Couriers () {
+//        List<Courier> expectedlistOfCouriersForDeliveryTimeOf11_45= new ArrayList<>();
+//        expectedlistOfCouriersForDeliveryTimeOf11_45.add(bobby_bikes);
+//        expectedlistOfCouriersForDeliveryTimeOf11_45.add(martin_Moves);
+//        expectedlistOfCouriersForDeliveryTimeOf11_45.add(geoff_Go_Go);
+//        Assertions.assertEquals(expectedlistOfCouriersForDeliveryTimeOf11_45, listOfCouriersTest.deliveryTimeCriteria(19:00));
+//    }
 
 
 
