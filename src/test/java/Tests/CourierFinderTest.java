@@ -27,18 +27,39 @@ public class CourierFinderTest {
 
     //Working hours criteria tests
 
-//    @Test
-//    public void When_Order_Is_Ready_For_Delivery_At_11_45_Then_Return_All_Avalaible_Couriers () {
-//        List<Courier> expectedlistOfCouriersForDeliveryTimeOf11_45= new ArrayList<>();
-//        expectedlistOfCouriersForDeliveryTimeOf11_45.add(bobby_bikes);
-//        expectedlistOfCouriersForDeliveryTimeOf11_45.add(martin_Moves);
-//        expectedlistOfCouriersForDeliveryTimeOf11_45.add(geoff_Go_Go);
-//        Assertions.assertEquals(expectedlistOfCouriersForDeliveryTimeOf11_45, listOfCouriersTest.deliveryTimeCriteria(19:00));
-//    }
+    @Test
+    public void When_Order_Is_Ready_For_Delivery_At_09_00_Then_Return_Bobby_And_Martin () {
+        List<Courier> expectedCouriers= new ArrayList<>();
+        expectedCouriers.add(bobby_bikes);
+        expectedCouriers.add(martin_Moves);
+        Assertions.assertEquals(expectedCouriers, listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(9,01)));
+        Assertions.assertEquals(expectedCouriers, listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(9,50)));
+        Assertions.assertNotEquals(expectedCouriers,listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(8,00)));
+    }
 
+    @Test
+    public void When_Order_Is_Ready_For_Delivery_At_11_45_Then_Return_All_Couriers () {
+        List<Courier> expectedCouriers= new ArrayList<>();
+        expectedCouriers.add(bobby_bikes);
+        expectedCouriers.add(martin_Moves);
+        expectedCouriers.add(geoff_Go_Go);
+        Assertions.assertEquals(expectedCouriers, listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(11,45)));
+        Assertions.assertEquals(expectedCouriers, listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(12,30)));
+    }
 
+    @Test
+    public void When_Order_Is_Ready_For_Delivery_At_16_30_Then_Return_Martin () {
+        List<Courier> expectedCouriers= new ArrayList<>();
+        expectedCouriers.add(martin_Moves);
+        Assertions.assertEquals(expectedCouriers, listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(16,30)));
+    }
 
-
+    @Test
+    public void When_Order_Is_Out_Of_Delivery_Time_Scope_Return_No_Couriers () {
+        List<Courier> expectedCouriers= new ArrayList<>();
+        Assertions.assertEquals(expectedCouriers, listOfCouriersTest.getListOfCourierMatchTheDeliveryCriteriaStartEndTime(LocalTime.of(20,30)));
+        Assertions.assertTrue(expectedCouriers.isEmpty());
+    }
 
     //Refrigeration criteria tests
     @Test
@@ -61,7 +82,6 @@ public class CourierFinderTest {
     public void When_Order_Has_No_Refridgeration_Preferance () {
         Assertions.assertNull(listOfCouriersTest.distanceCriteria(6.0));
     }
-
 
     //distance criteria tests
     @Test
